@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Form Validation JS</h2>
+    <form name="myform" onsubmit="return myfun()">
+    <input type="text" name="fname" id="name">
+    <input type="submit" value="Submit"> 
+    <p id="p"></p>
+    </form>
+        <script>
+
+          function myfun(){
+
+            var x= document.forms["myform"]["fname"].value;
+            if (x===""){
+                document.getElementById("p").innerHTML="Fill The form";
+                return false;
+            }
+            else{
+
+                document.getElementById("p").innerHTML="Form Submitted!";
+                return false;
+            }
+          
+        }
+
+        </script>
+    
+
+</body>
+</html>
