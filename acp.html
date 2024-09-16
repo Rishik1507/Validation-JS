@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" onsubmit="">
+     <p id="p"></p>
+      Enter your age:  <input type="number" min=18 id="age" required>
+      <button onclick="fun()">
+        </form>
+        <script>
+         function fun(){
+         var a=document.getElementById("age")
+         if (a!=checkValidity()){
+        document.getElementById("p").innerHTML=a.ValidationMessage;
+         }
+         else{
+
+            document.getElementById("p").innerHTML="Form Submitted"
+         }
+
+
+         }
+
+        </script>
+
+</body>
+</html>
